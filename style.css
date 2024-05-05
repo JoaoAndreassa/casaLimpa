@@ -1,0 +1,78 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(5, 151, 151, 0.267);
+  text-align: center;
+  height: 100vw;
+}
+.title{
+  height: 8vh;
+  font-size: 20px;
+  color: #c9c9c9;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 3vh;
+  background-color: rgb(5, 151, 151);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 25px;
+  background-color: rgba(5, 151, 151, 0.267);
+}
+
+.produto {
+  background-color: #dbedee;
+  width: 20vh;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto:hover {
+  transform: translateY(-7px);
+  background-color: #b4c2c4;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produto h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.produto p {
+  margin-top: 10px;
+  color: #534b4b;
+}
+.leia-mais {
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none; /* Removendo a borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de apontar */
+  transition: background-color 0.3s ease; /* Transição de cor de fundo */
+  margin-top: 30px; /* Margem superior */
+  display: block; /* Para que o botão ocupe toda a largura do contêiner */
+  width: 100%; /* Para que o botão ocupe toda a largura do contêiner */
+}
+
+.leia-mais:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
