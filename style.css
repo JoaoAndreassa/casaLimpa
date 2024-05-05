@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: rgba(5, 151, 151, 0.267);
   text-align: center;
-  height: 100vw;
+  height: 10vw;
 }
 .title{
   height: 8vh;
@@ -30,7 +30,7 @@ body {
 
 .produto {
   background-color: #dbedee;
-  width: 20vh;
+  width: calc(25% - 20px);
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid #ccc;
@@ -75,4 +75,11 @@ body {
 
 .leia-mais:hover {
   background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+/* Define o layout para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .produto {
+    width: calc(50% - 20px); /* Largura de 50% do contêiner com espaçamento entre os produtos */
+    margin-bottom: 20px; /* Espaçamento entre os produtos */
+  }
 }
